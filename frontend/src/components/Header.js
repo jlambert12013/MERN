@@ -1,10 +1,10 @@
-import { LinkContainer } from "react-router-bootstrap";
-import Navbar from "react-bootstrap/Navbar";
-import NavbarBrand from "react-bootstrap/esm/NavbarBrand";
-import Nav from "react-bootstrap/Nav";
-import Image from "react-bootstrap/Image";
-import logo from "../assests/logo.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LinkContainer } from 'react-router-bootstrap'
+import Navbar from 'react-bootstrap/Navbar'
+import NavbarBrand from 'react-bootstrap/esm/NavbarBrand'
+import Nav from 'react-bootstrap/Nav'
+import Image from 'react-bootstrap/Image'
+import logo from '../assests/logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Header() {
   return (
@@ -20,6 +20,9 @@ function Header() {
           <Nav className="ms-auto">
             <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/products">
+              <Nav.Link>Products</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/about">
               <Nav.Link>About</Nav.Link>
@@ -39,6 +42,6 @@ function Header() {
         </Navbar.Collapse>
       </Navbar>
     </header>
-  );
+  )
 }
-export default Header;
+export default Header
