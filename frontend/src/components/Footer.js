@@ -1,11 +1,11 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import { LinkContainer } from "react-router-bootstrap";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
-import Image from "react-bootstrap/Image";
-import logo from "../assests/logo.svg";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { LinkContainer } from 'react-router-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Nav from 'react-bootstrap/Nav'
+import Image from 'react-bootstrap/Image'
+import logo from '../assests/logo.svg'
 
 function Footer() {
   return (
@@ -18,7 +18,7 @@ function Footer() {
               xs={12}
               md={{ span: 3, offset: 1 }}
             >
-              <Image src={logo} fluid />
+              <Image src={logo} style={{ width: '4rem', height: '4rem' }} />
             </Col>
             <Col xs={6} md={2}>
               <h5>Brands</h5>
@@ -88,6 +88,6 @@ function Footer() {
         </Row>
       </Container>
     </>
-  );
+  )
 }
-export default Footer;
+export default Footer

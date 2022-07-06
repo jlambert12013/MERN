@@ -2,12 +2,19 @@ import ProductSlider from '../components/ProductSlider'
 import Intimidator from '../components/Intimidator'
 import CubCadet from '../components/CubCadet'
 import Argo from '../components/Argo'
-// import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 function Home() {
-  // const [product, setProducts] = useState([])
+  const [products, setProducts] = useState([])
 
-  // useEffect(() => {})
+  useEffect(() => {
+    const getAll = async () => {
+      const { data } = await axios.get('/api/inventory')
+      setProducts(data)
+    }
+    getAll()
+  }, [])
 
   return (
     <>

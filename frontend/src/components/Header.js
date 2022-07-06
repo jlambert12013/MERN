@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Header() {
   return (
     <header className="top-header">
-      <Navbar bg="light" fixed="top" expand="md" className="px-5 border-0 ">
+      <Navbar bg="light" expand="md" className="px-5 border-0 ">
         <LinkContainer to="/">
           <NavbarBrand>
             <Image src={logo} alt="Logo" />

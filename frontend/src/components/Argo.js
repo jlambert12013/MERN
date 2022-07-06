@@ -1,14 +1,14 @@
-import Image from "react-bootstrap/Image";
+import Image from 'react-bootstrap/Image'
 // import Logo from "../assests/argo/cub-cadet-logo.svg";
-import argo1 from "../assests/argo/argo1.jpg";
-import argo2 from "../assests/argo/argo2.jpg";
-import argo3 from "../assests/argo/argo3.jpg";
+import argo1 from '../assests/argo/argo1.jpg'
+import argo2 from '../assests/argo/argo2.jpg'
+import argo3 from '../assests/argo/argo3.jpg'
 
 function Argo() {
   return (
-    <section>
-      <h2>Frontier Series</h2>
+    <section style={{ backgroundColor: '#f4f4f4' }}>
       <Image src={argo1} />
+      <h2>Frontier Series</h2>
 
       <p>
         The Frontier six-wheeled amphibious vehicle is the starting point for
@@ -22,8 +22,8 @@ function Argo() {
         rise above the industry's standard definition of entry-level.
       </p>
 
-      <h2>Aurora Series</h2>
       <Image src={argo2} />
+      <h2>Aurora Series</h2>
 
       <p>
         The Aurora 800 SX is raring to go on its next adventure. With the full
@@ -37,8 +37,8 @@ function Argo() {
         Charge!
       </p>
 
-      <h2>Xplorer Series</h2>
       <Image src={argo3} />
+      <h2>Xplorer Series</h2>
 
       <p>
         The ARGO team has been on a mission since debuting the ARGO Xplorer XR
@@ -51,7 +51,7 @@ function Argo() {
         better. Go see why an ARGO XR 500 is a better fit for you.
       </p>
     </section>
-  );
+  )
 }
 
-export default Argo;
+export default Argo
